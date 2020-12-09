@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Alterar Cores</title>
+
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <!--
+Crie dois botões no HTML chamados: 'Verde', ,'Vermelho'. ao clicar neles, o style="background-color: {COR-SELECIONADA}" vai ser alterado dinamicamente Alterar-Style de uma div
+  -->
+  <div id="alterar" class="container">
+
+    <h3>Mudança de Cores</h3>
+    <br />
+    <br />
+    <br />
+    <button id="verde">Verde</button>
+    <br />
+    <br />
+    <button id="vermelho">Vermelho</button>
+
+  </div>
+
+  <script type="text/javascript">
+
+    verde = document.getElementById('verde');
+    vermelho = document.getElementById('vermelho');
+
+    verde.addEventListener('click', function(){
+        document.getElementById('alterar').style.background = 'green';
+    });
+
+    vermelho.addEventListener('click', () => {
+        document.getElementById('alterar').style.background = 'red';
+    });
+
+
+  </script>
+
+</body>
+</html>

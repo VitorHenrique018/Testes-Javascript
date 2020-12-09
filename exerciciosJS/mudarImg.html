@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>JS Examples</title>
+
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <!--
+    No seu HTML exiba a imagem de uma lampada, ao clicar em cima da lampada, troque o src dela para a lampada que está acessa.
+  -->
+
+  <div class="container" >
+    <img id="lampada" src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true">
+  </div>
+
+  <div class="container">
+    <br />
+    <br />
+    <br />
+
+    <button id="ligar">Acender Lampada</button>
+  </div>
+  
+
+  <script type="text/javascript">
+
+  var botao = document.getElementById('ligar');
+
+  botao.addEventListener('mouseover', function(){
+
+    var lampada = document.getElementById('lampada').src = 'https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true';;
+  })
+
+
+  </script>
+
+</body>
+</html>

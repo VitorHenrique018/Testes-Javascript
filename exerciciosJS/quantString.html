@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>JS Examples</title>
+</head>
+<body>
+  <!--
+    exiba a quantidade de letras que possuem o texto inserido ao clicar no botão
+  -->
+
+  <div>
+  Insira: 
+  <input type="text" id="nome" />
+  <br/>
+  <br/>
+
+  <button id="botao">Aperte Aqui</button>
+
+  </div>
+
+  <script type="text/javascript">
+
+  var nome = document.getElementById('nome');
+
+  var botao = document.getElementById('botao');
+
+  botao.addEventListener('click', function(){
+
+    var quantNome = nome.value;
+
+    var count = quantNome.length;
+
+    alert(count);
+
+  });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Listar Nomes</title>
+
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <!--
+(38) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr']
+E exiba todos os nomes, dentro do html: <ul id="nomes"></ul>
+  -->
+  <div id="alterar" class="container">
+      <ul id="nomes"></ul>
+
+  </div>
+
+  <script type="text/javascript">
+
+    var deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr'];
+
+    var lista = document.getElementById('nomes');
+
+    deuses.push('Kratros')
+
+    lista.style.listStyle = 'none';
+
+    for(var i = 0;i<deuses.length;i++){
+        lista.innerHTML+='<li>'+deuses[i]+'</li>'
+    }
+
+
+  </script>
+
+</body>
+</html>
